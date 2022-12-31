@@ -1,14 +1,13 @@
 {
-  "Post": {
-    "title": { "string": {} },
-    "comments": {
-      "hasMany": "Comment"
-    }
+  "User": {
+    "name": { "string": {} },
+    "password": { "string": {} }
   },
-  "Comment": {
-    "body": { "string": {} },
-    "post": {
-      "belongsTo": "Post"
+  "Todo": {
+    "title": { "string": {} },
+    "status": {"bool": {}},
+    "userId": {
+      "belongsTo": "User"
     }
   }
 }
