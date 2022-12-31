@@ -5,7 +5,7 @@
   },
   "Todo": {
     "title": { "string": {} },
-    "status": {"bool": {}},
+    "status": {"boolean": {}},
     "userId": {
       "belongsTo": "User"
     }
